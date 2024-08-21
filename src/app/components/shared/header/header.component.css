@@ -1,0 +1,60 @@
+*{
+    padding:0px;
+    margin: 0px;
+    margin-top:0px;
+}
+header {
+    margin:auto;
+    max-width:1000px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul, ol {
+    list-style: none;
+}
+.nav li a{
+    color:#fff;
+    background-color:rgba(25, 135, 84, 1);
+    text-decoration:none;
+    padding:12px 35px;	
+    display:block;	
+}
+.nav li a:hover{
+    background: #f56f3a;
+}
+.nav >li {
+    float:left;
+}
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:200px;
+}
+.nav li:hover >ul{
+    display: block;
+}
+.nav li ul li{
+    position: relative;
+}
+.nav li ul li ul {
+    right:-200px;
+    top:0px;
+}
+.nav{
+    float: right;
+    width:800px;
+    margin: 0 auto;
+}
+
+
+
+.input-icon{
+    position: absolute;
+    right: 17px;
+    top: calc(50% - 0.5em); /*Mantenga el icono en el centro de la entrada, independientemente de la altura de la entrada */
+  }
+  input{
+    padding-left: 10px; /*Deja espacio a la izquierda*/
+  }
+  .input-wrapper{
+    position: relative;
+  }
