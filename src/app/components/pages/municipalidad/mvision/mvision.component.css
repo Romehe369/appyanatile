@@ -1,0 +1,8 @@
+.mission-title {
+    color: #00B140; /* Color verde */
+    font-weight: bold;
+}
+.mission-text {
+    font-size: 1.1rem; /* Tamaño de la letra */
+    text-align: justify;
+}
