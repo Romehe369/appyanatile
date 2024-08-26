@@ -1,0 +1,9 @@
+.economia-section {
+    padding: 20px;
+}
+.line {
+    width: 50px;
+    height: 3px;
+    background-color: #29a745; /* Ajusta el color según sea necesario */
+    margin-bottom: 10px;
+}
