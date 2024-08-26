@@ -1,1 +1,79 @@
-<p>servicios works!</p>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Primero</th>
+        <th scope="col">Último</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>...mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>...fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>...twitter</td>
+      </tr>
+    </tbody>
+  </table>
+    <button id="btnAnterior">Anterior</button>
+    <button id="btnSiguiente">Siguiente</button>
+
+<script>
+    const productos = [
+    { producto: "Manzana", cantidad: 10, precio: 2.5 },
+    // ... otros 19 productos
+];
+
+const tbodyProductos = document.getElementById('tbodyProductos');
+const btnAnterior = document.getElementById('btnAnterior');
+const btnSiguiente = document.getElementById('btnSiguiente');
+
+let paginaActual   
+ = 0;
+const productosPorPagina = 5;
+
+function mostrarPagina(pagina) {
+    tbodyProductos.innerHTML = '';
+    const inicio = pagina * productosPorPagina;
+    const fin = inicio + productosPorPagina;
+    const productosPagina = productos.slice(inicio, fin);
+
+    productosPagina.forEach(producto => {
+        const fila = document.createElement('tr');
+        fila.innerHTML = `
+            <td>${producto.producto}</td>
+            <td>${producto.cantidad}</td>
+            <td>${producto.precio}</td>
+        `;
+        tbodyProductos.appendChild(fila);
+    });
+
+    btnAnterior.disabled = pagina === 0;
+    btnSiguiente.disabled = pagina === Math.ceil(productos.length / productosPorPagina) - 1;
+}
+
+mostrarPagina(paginaActual);
+
+btnAnterior.addEventListener('click', () => {
+    paginaActual--;
+    mostrarPagina(paginaActual);
+});
+
+btnSiguiente.addEventListener('click', () => {
+    paginaActual++;
+    mostrarPagina(paginaActual);
+});
+</script>
