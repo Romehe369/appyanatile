@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FestividadesComponent } from "../festividades/festividades.component";
 
 @Component({
   selector: 'app-atractivos',
   standalone: true,
-  imports: [],
+  imports: [FestividadesComponent],
   templateUrl: './atractivos.component.html',
   styleUrl: './atractivos.component.css'
 })
