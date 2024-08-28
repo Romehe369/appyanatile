@@ -5,6 +5,7 @@ import { HimnoComponent } from './components/pages/yanatile/himno/himno.componen
 import { FestividadesComponent } from './components/pages/yanatile/festividades/festividades.component';
 import { AtractivosComponent } from './components/pages/yanatile/atractivos/atractivos.component';
 import { HistoriaComponent } from './components/pages/yanatile/historia/historia.component';
+import { NoticiasComponent } from './components/pages/noticias/noticias.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -14,5 +15,6 @@ export const routes: Routes = [
 { path: 'festividades', component: FestividadesComponent },
 { path: 'atrativos', component: AtractivosComponent },
 { path: 'historia', component: HistoriaComponent },
+{ path: 'noticias', component: NoticiasComponent },
 { path: '**', redirectTo: 'inicio', pathMatch: 'full'}
 ];
