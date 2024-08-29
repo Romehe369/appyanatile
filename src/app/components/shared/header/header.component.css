@@ -12,8 +12,8 @@ ul, ol {
     list-style: none;
 }
 .nav li a{
-    color:#fff;
-    background-color:rgba(25, 135, 84, 1);
+    color:#f8f4f4;
+    background-color:#6c757d;
     text-decoration:none;
     padding:12px 35px;	
     display:block;	
