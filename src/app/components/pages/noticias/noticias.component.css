@@ -3,14 +3,14 @@
     background-position: center;
   }
 
-  /*.bg-image {
-    background-image: url('tu-imagen.jpg');
+.bg-image {
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../assets/img/team-1.jpg);;
     background-size: cover;
     background-position: center;
-    filter: blur(3px); /* Un ligero efecto de desenfoque 
+    filter: blur(3px);  
   }
   
-  h1 {
+.h1 {
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad 
-  }*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
