@@ -40,5 +40,4 @@ export class OrdeanzamdyComponent implements OnInit {
 
 setInterval(updateTime, 1000);
 updateTime(); // Inicializar el reloj inmediatamente*/
-
 }
