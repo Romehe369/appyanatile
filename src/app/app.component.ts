@@ -10,11 +10,12 @@ import { HimnoComponent } from "./components/pages/yanatile/himno/himno.componen
 import { ObrasComponent } from "./components/pages/obras/obras.component";
 import { ServiciosComponent } from "./components/pages/servicios/servicios.component";
 import { AtractivosComponent } from "./components/pages/yanatile/atractivos/atractivos.component";
+import { OrdeanzamdyComponent } from "./components/pages/transparencia/ordeanzamdy/ordeanzamdy.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, InicioComponent, MvisionComponent, NoticiasComponent, HistoriaComponent, HimnoComponent, ObrasComponent, ServiciosComponent, AtractivosComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, InicioComponent, MvisionComponent, NoticiasComponent, HistoriaComponent, HimnoComponent, ObrasComponent, ServiciosComponent, AtractivosComponent, OrdeanzamdyComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
